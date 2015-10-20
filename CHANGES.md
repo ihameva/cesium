@@ -21,6 +21,7 @@ Change Log
 * Fixed token issue in `ArcGisMapServerImageryProvider`.
 * `ImageryLayerFeatureInfo` now has an `imageryLayer` property, indicating the layer that contains the feature.
 * Added `BoxOutlineGeometry.fromAxisAlignedBoundingBox` and `BoxGeometry.fromAxisAlignedBoundingBox` functions.
+* The WebGL setting of `failIfMajorPerformanceCaveat` now defaults to `false`, which is the official WebGL default. This improves compatibility with out-of-date drivers and remote desktop sessions. Cesium will run slower in these cases instead of simply failing to load. 
 * Updated `requirejs` from 2.1.9 to 2.1.20.
 * Updated `almond` from 0.2.6 to 0.3.1.
 
